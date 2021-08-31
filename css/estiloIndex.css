@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+html{
+    background-color: #c0c0c0;
+    font-size: 62.5%;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+#grad{
+    background-image: linear-gradient(to top, #6e6d6d, #c0c0c0);
+}
+.imagenLogo{
+    width: 10%;
+    padding-top: 2%;
+}
+h1{
+    text-align: center;
+    font-size: 800%;
+    font-weight: lighter;
+    padding-top: 2%;
+    padding-left: 15%;
+} 
+header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: left;
+}
+
+
+ nav{
+    background-color: #989898;
+    font-weight: bold;
+    font-size: 150%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+   color: black;
+}
+ul{
+    list-style: none; 
+    text-decoration: none;
+    width: 90%;
+}
+
+li{
+    display: inline-block;
+    width: 18%;
+    position: relative;
+    font-size: 150%;
+}
+
+li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    width: 200%;
+}
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+    font-size: 80%;
+    text-align: center;
+}
+
+ul li:hover ul  {
+    display: block;
+    background-color: #989898;
+}
+
+li a:hover {
+    background-color: #b6b5b5;
+    color: black;
+
+}
+
+div h2 {
+    font-size: 300%;
+    text-align: center;
+    font-style: italic;
+    padding: 5%;
+}
+div h3 {
+    text-align: center;
+    font-size: 150%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.imagenBanner1{
+    width: 100%;
+}
+
+.divComentarios{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around;
+    padding: 5%;
+    height: 35%;
+
+}
+
+
+.divComentariosEsp{
+    background-color:whitesmoke ;
+    width: 30%;
+    height: 265px;
+    text-align: center;
+    border: 3%;    
+    height: 35%;
+}
+.imagenComentarios{
+    width: 20%;
+    padding-top: 10%;
+}
+
+.divImagenes{
+    width: 100%;
+    height: 81%;
+    display: grid;
+    grid-template-areas: 
+        "imagen1 imagen1 imagen2"
+        "imagen3 imagen4 imagen4"
+        "imagen5 imagen5 imagen6"; 
+    grid-template-columns: 27% 27% 27%;
+    grid-template-rows: 27% 27% 27%;
+    grid-gap: 2%;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: center;
+    align-content: stretch;
+    padding: 2%;
+}
+
+@media (max-width:320px){
+    .divImagenes{
+        grid-template-areas: 
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4"
+        "imagen5"
+        "imagen6";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    }
+}
+@media (max-width:780px){
+    .divImagenes{
+        grid-template-areas: 
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4"
+        "imagen5"
+        "imagen6";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    }
+}
+
+.divImagenes > * {
+
+}
+.imagen1{
+    grid-area: imagen1;
+    width:  100%;
+    justify-self: stretch;
+}
+.imagen2{
+    grid-area: imagen2;
+    width: 100%;
+    justify-self: stretch;
+}
+.imagen3{
+    grid-area: imagen3;
+    width: 100%;
+    justify-self: stretch;
+}
+.imagen4{
+    grid-area: imagen4;
+    width: 100%;
+    justify-self: stretch;
+}
+.imagen5{
+    grid-area: imagen5;
+    width: 100%;
+    justify-self: stretch;
+}
+.imagen6{
+    grid-area: imagen6;
+    width: 100%;
+    justify-self: stretch;
+}
+.imagenBanner2 {
+    width: 80%;
+    border: double;
+    margin-left: 10%;
+}
+.imagenBanner3{
+    width: 94%;
+  padding: 3%;
+    
+}
+
+footer{
+    background-color: #989898;
+    font-size: 250%;
+}
+.imagenFooter{
+    width: 2%;
+}

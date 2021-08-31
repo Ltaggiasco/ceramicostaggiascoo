@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding:0;
+}
+$color1: #555555;
+$colorLetra:#CDC9C3;
+$colorLetrasecundaria:#555555;
+
+body{
+    background-color: $color1;
+    font-size: 62.5%;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    color: $colorLetra;
+       
+}
+
+.grid-header{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 1pr 1pr;
+    text-align: center;
+    justify-content: start;
+    font-size: 200%;
+    grid-template-areas:
+            "informacion informacion informacion informacion"
+            "imagen-header menu menu menu";
+}
+
+.informacion{
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #989898;
+    display: grid;
+    grid-template-columns: repeat(3, 33,3%);
+    text-align: center;
+    justify-content: stretch;
+    font-size: 175%;
+    grid-template-areas:
+     "direccion horario telefono";
+     color: $colorLetrasecundaria;
+}
+
+.direccion{
+    grid-area: direccion;
+    justify-self: end;
+}
+.horario{
+    grid-area: horario;
+    justify-self: center;
+}
+.telefono{
+    grid-area: telefono;
+    justify-self: left;
+}
+.imagen-header{
+    grid-area: imagen-header;
+    width:  300%;
+    justify-self: center;
+}
+.menu{
+    grid-area: menu;
+    width:  100%;
+    justify-self: end;
+    justify-items: left;
+    padding: 3%;
+}
+header{
+color: $colorLetra;
+    nav{
+        img{
+            width: 10%;
+        } 
+        font-weight: bold;
+        font-size: 200%;
+        justify-content: end;
+        color: $colorLetra;
+        text-decoration: none;
+        list-style: none;
+
+        ul{
+            text-decoration: none;
+            list-style: none;
+            color: $colorLetra;
+            
+            li{
+                text-decoration: none;
+                list-style: none;
+                color: $colorLetra;
+                padding: 1%;
+                a{
+                    text-decoration: none;
+                    list-style: none;
+                    color: $colorLetra;
+                }
+                a:hover{
+                    color: #989898c2;
+                    text-decoration: none;
+                    list-style: none;
+                }
+            }  
+        }
+        
+    }
+
+}
+.carousel{
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+h2{
+    background-color: #989898;
+    font-weight: bold;
+    font-size: 270%;
+    padding-right: 5%;
+    padding-left: 4%;
+    padding-top: 1%;
+    width: 100%;
+}
+h2 a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+h2 a:hover {
+    background-color: #b6b5b5;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+
+}
+.divProductos{
+    width: 95%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row: 1fr;
+    grid-gap: 2%;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: stretch;
+    align-content: stretch;
+    padding-left: 2.5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+.imagen{
+    width: 100%;
+    justify-self: stretch;
+}
+.divComentarios{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around;
+    padding: 5%;
+    height: 35%;
+    color: $colorLetrasecundaria;
+
+}
+
+
+.divComentariosEsp{
+    background-color: #989898;
+    width: 30%;
+    text-align: center;
+    border: 3%;    
+}
+.imagenComentarios{
+    h3{
+        size: 30%;
+    }
+    width: 20%;
+    padding-top: 10%;
+}
+
+
+.divImagenes{
+    width: 100%;
+    height: 81%;
+    display: grid;
+    grid-template-areas: 
+        "imagen1 imagen1 imagen2"
+        "imagen3 imagen4 imagen4"
+        "imagen5 imagen5 imagen6"; 
+    grid-template-columns: 27% 27% 27%;
+    grid-template-rows: 27% 27% 27%;
+    grid-gap: 2%;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: center;
+    align-content: stretch;
+    padding: 2%;
+}
+/*productos*/
+.divImagenesP{
+    width: 100%;
+    height: 475%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2%;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: center;
+    align-content: stretch;
+    padding-left: 2.5%;
+    padding-bottom: 13%;
+    padding-top: 2%;
+    
+}
+/*Presupuesto*/
+.presupuesto{
+    padding: 2%;
+}
+/*Inspirate*/
+.divImagenesI{
+    width: 95%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2%;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: center;
+    align-content: stretch;
+    padding-left: 2.5%;
+    padding-bottom: 13%;
+    }
+
+@media (max-width:320px){
+    .divImagenes{
+        grid-template-areas: 
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4"
+        "imagen5"
+        "imagen6";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    }
+}
+@media (max-width:780px){
+    .divImagenes{
+        grid-template-areas: 
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4"
+        "imagen5"
+        "imagen6";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    .divImagenesP{
+        grid-template-columns: 1fr;
+    }
+    .divImagenesI{
+        grid-template-columns: 1fr;
+    }
+    .divComentarios{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: space-around;
+        padding: 5%;
+        height: 35%;
+        color: $colorLetrasecundaria;
+    
+}
+
+
+.divImagenes > * {
+
+}
+.imagen1{
+    grid-area: imagen1;
+    width:  100%;
+    justify-self: stretch;
+}
+.imagen2{
+    grid-area: imagen2;
+    width: 100%;
+    justify-self: stretch;
+}
+.imagen3{
+    grid-area: imagen3;
+    width: 100%;
+    justify-self: stretch;
+}
+.imagen4{
+    grid-area: imagen4;
+    width: 100%;
+    justify-self: stretch;
+}
+.imagen5{
+    grid-area: imagen5;
+    width: 100%;
+    justify-self: stretch;
+}
+.imagen6{
+    grid-area: imagen6;
+    width: 100%;
+    justify-self: stretch;
+}
+.imagenBanner2 {
+    width: 80%;
+    border: double;
+    margin-left: 10%;
+}
+.imagenBanner3{
+    width: 94%;
+  padding: 3%;
+    
+}
+
+footer{
+    background-color: #989898;
+    font-size: 250%;
+    color: $colorLetrasecundaria;
+}
+.footer{
+        display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1pr 1pr;
+    grid-template-areas: "tituloFooter imagenFooter"
+                        " direccionFooter direccionFooter";
+
+}
+
+.tituloFooter{
+    grid-area: tituloFooter;
+    
+}
+.imagenFooter{
+    grid-area: imagenFooter;
+    width: 20%;
+    justify-self: end;
+    justify-items: left;
+
+}
+.direccionFooter{
+    grid-area: direccionFooter;
+    justify-self: end;
+    justify-items: left;
+}
