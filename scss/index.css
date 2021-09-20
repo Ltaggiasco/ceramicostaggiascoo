@@ -16,7 +16,7 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (25%)[4];
-      grid-template-columns: repeat(4, 25%);
+      grid-template-columns: repeat(5, 20%);
   -ms-grid-rows: 1pr 1pr;
       grid-template-rows: 1pr 1pr;
   text-align: center;
@@ -24,7 +24,8 @@ body {
       -ms-flex-pack: start;
           justify-content: start;
   font-size: 200%;
-      grid-template-areas: "informacion informacion informacion informacion" "imagen-header menu menu menu";
+      grid-template-areas: "informacion informacion informacion informacion informacion" 
+                          "imagen-header menu menu menu menu";
 }
 
 .informacion {
@@ -102,6 +103,7 @@ header nav {
   color: #CDC9C3;
   text-decoration: none;
   list-style: none;
+  color: #555555;
 }
 
 header nav img {
@@ -135,8 +137,9 @@ header nav ul li a:hover {
 
 .carousel {
   width: 100%;
-  padding-left: 7%;
-  padding-right: 7%;
+  padding: 7%;
+  padding-bottom:1.5% ;
+  padding-top:0%;
 }
 
 h2 {
@@ -160,6 +163,9 @@ h2 a:hover {
   list-style: none;
   text-decoration: none;
   color: black;
+}
+h5{
+font-size: 300%;
 }
 
 .divProductos {
@@ -193,22 +199,7 @@ h2 a:hover {
 }
 
 .divComentarios {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-  padding: 5%;
-  height: 35%;
+  background-color: #989898;
   color: #555555;
 }
 
@@ -230,7 +221,7 @@ h2 a:hover {
 
 .divImagenes {
   width: 100%;
-  height: 81%;
+  height: 90%;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "imagen1 imagen1 imagen2" "imagen3 imagen4 imagen4" "imagen5 imagen5 imagen6";
@@ -248,8 +239,10 @@ h2 a:hover {
           justify-content: center;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
-  padding: 2%;
+  padding: 0%;
+  padding-top: 2%;
 }
+
 
 /*productos*/
 .divImagenesP {
@@ -277,14 +270,17 @@ h2 a:hover {
 }
 
 /*Presupuesto*/
-.presupuesto {
-  padding: 2%;
+.title{
+  font-size: 200%;
+}
+.tituloPresupuesto { 
+  background-color: #989898;
+  color: #555555;
 }
 
 /*Inspirate*/
 .divImagenesI {
   width: 95%;
-  height: 475%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -306,6 +302,13 @@ h2 a:hover {
   -webkit-transform: scale(2, 1);
           transform: scale(2, 1);
 }
+.imagenAmplia{
+  justify-self: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
 
 @media (max-width: 320px) {
   .divImagenes {
@@ -315,15 +318,35 @@ h2 a:hover {
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
+  .grid-header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1pr;
+    grid-template-rows: 1pr 1pr 1 pr 1pr 1pr;
+    text-align: center;
+    justify-content: end;
+    font-size: 100%;
+    grid-template-areas:
+            "informacion informacion informacion informacion informacion"
+            " imagen-header imagen-header imagen-header imagen-header imagen-header"
+            "menu menu menu";
 }
 
+}
+.liMenu{
+  width: 100%;
+  grid-area: "li";
+}
 @media (max-width: 780px) {
   .divImagenes {
+    width: 85%;
         grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4" "imagen5" "imagen6";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding-bottom: 55%;
+        padding-top: 4%;
   }
   .divImagenesP {
     -ms-grid-columns: 1fr;
@@ -333,6 +356,12 @@ h2 a:hover {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .grid-header{
+    font-size: 100%;
+}
+.footer{
+  padding: 5%;
+}
 }
 
 .imagen1 {
@@ -406,18 +435,9 @@ h2 a:hover {
 footer {
   background-color: #989898;
   font-size: 250%;
-  color: #555555;
+  color: #363636;
 }
 
-.footer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  -ms-grid-rows: 1pr 1pr;
-      grid-template-rows: 1pr 1pr;
-      grid-template-areas: "tituloFooter imagenFooter" " direccionFooter direccionFooter";
-}
 
 .tituloFooter {
   -ms-grid-row: 1;

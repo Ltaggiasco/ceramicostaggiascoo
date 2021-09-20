@@ -11,47 +11,49 @@
     <meta name="keywords" content="CERAMICA, CONSULTA, MINORISTA, MAYORISTA, PRESUPUESTO, PAGOS, PORCELANATO, ALBERDI, ALLPA, CORTINES, CAÑUELAS, VITE" >
     <title>Presupuestos en Cerámicos Taggiasco</title>
     <meta name="description" content="Estamos para aydarte.">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
 </head>
 <body class="presupuesto">
   <header>
+
     <div class="informacion">
-      <div class="direccion" >DIRECCIÓN</div>
-      <div class="horario">HORARIOS</div>
-      <div class="telefono">TELÉFONO</div>
-    </div>
-    <nav class="grid-header">
-     <div class="imagen-header"><img src="../logoSinFondo.PNG" alt="" > </div> 
-     <!-- <div><h1>Cerámicos Taggiasco</h1> </div>   -->
-     <div class="menu">
-           <ul class="nav justify-content-end">
-            <li class="">
-              <a class="" href="../index.html">Inicio</a>
-            </li>
-            <li class="">
-              <a class="" href="./productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="" href="./presupuesto.html">Presupuesto</a>
-            </li>
-            <li class="">
-              <a class="" href="./inspirate.html">Inspirate</a>
-            </li>
-            <li class="">
-              <a class="" href="./ofertas.html">Ofertas</a>
-            </li>
-          </ul>
-     </div>
-      
-     
-    </nav>
-  </header>
-    <h1>¿En que te podemos ayudar?</h1>
+        <div class="direccion" >Todo para la construcción</div>
+        <div class="horario"></div>
+        <div class="telefono">Comunicate con nosotros al (011)4236-6353</div>
+   </div>
+    <nav class="grid-header ">
+        <div class="imagen-header"><img src="../logoSinFondo.PNG" alt="" > </div> 
+        <div class="menu">
+              <ul class="nav justify-content-end">
+               <li class="li">
+                 <a class="" href="../index.html">Inicio</a>
+               </li>
+               <li class="li">
+                 <a class="" href="./productos.html">Productos</a>
+               </li>
+               <li class="li">
+                 <a class="" href="./presupuesto.html">Presupuesto</a>
+               </li>
+               <li class="li">
+                 <a class="" href="./inspirate.html">Inspirate</a>
+               </li>
+               <li class="li">
+                 <a class="" href="./ofertas.html">Ofertas</a>
+               </li>
+             </ul>
+        </div>
+         
+</header>
+  <div class="tituloPresupuesto"><h1>¿En que te podemos ayudar?</h1></div>  
 
     <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <label for="exampleFormControlInput1" class="form-label title">Nombre</label>
         <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
       </div> 
-      <label for="Venta">Ventas</label>
+      <label for="Venta" class="title">Ventas</label>
       <select class="form-select" aria-label="Default select example">
         <option selected> </option>
         <option value="Mayorista">Mayorista</option>
@@ -59,24 +61,24 @@
       </select>
       <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="3">
-        <label class="form-check-label" for="flexCheckDefault">
+        <label class="form-check-label title" for="flexCheckDefault">
           Tarjeta de crédito
         </label>
       </div>
       <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked name="1">
-            <label class="form-check-label" for="flexCheckChecked">
+            <label class="form-check-label title" for="flexCheckChecked">
             Tarjeta de débito
             </label>
         </div>
         <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked name="2">
-            <label class="form-check-label" for="flexCheckChecked">
+            <label class="form-check-label title" for="flexCheckChecked">
             Efectivo
             </label>
       </div>
       <div class="mb-3">
-        <label for="Consulta" class="form-label">Consulta</label>
+        <label for="Consulta" class="form-label title">Consulta</label>
         <textarea class="form-control" id="Consulta" rows="5">Ingrese su consulta aquí.</textarea>
       </div>
    <form enctype="application/x-www-form-urlencoded" action="" method="GET"> 
@@ -88,15 +90,73 @@
 
 </form>
 
-<footer class="footer">
-  <div class="tituloFooter">Cerámicos Taggiasco</div>
-  <div class="imagenFooter">        
-    <img src="../imagenes/marcasYLogos/facebookPng.png" alt="" class="imagenFooter">
-    <img src="../imagenes/marcasYLogos/instagramPng.png" alt="" class="imagenFooter">
-    <img src="../imagenes/marcasYLogos/wppPng.png" alt="" class="imagenFooter">
-  </div>
-  <div class="direccionFooter"><h4>Av. San Martin 4111, Rafael Calzada, Buenos Aires, Argentina - (+54 11) 4236-6356 </h4></div>
+<footer class="text-center text-lg-start bg-light text-muted" style="background-color: #555;">
 
+  <section class=""style="color: #cdc9c3; background-color: #555;" >
+    <div class="container text-center text-md-start mt-5" style="color: #cdc9c3; background-color: #555;">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Cerámicos Taggiasco</h6>
+          <h6>
+              20 años acompañando en la remodelacion de los hogares.
+          </h6>
+        </div>
+        <!--<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Productos
+          </h6>
+          <h6>
+            <a href="../ventanas/productos/alberdi.html" class="text-reset">Alberdi</a>
+          </h6>
+          <h6>
+            <a href="../ventanas/productos/allpa.html" class="text-reset">Allpa</a>
+          </h6>
+          <h6>
+            <a href="../ventanas/productos/cañuelas.html" class="text-reset">Cañuelas</a>
+          </h6>
+          <h6>
+            <a href="../ventanas/productos/cortines.html" class="text-reset">Cortines</a>
+          </h6>
+          <h6>
+              <a href="../ventanas/productos/vite.html" class="text-reset">Vite</a>
+          </h6>
+        </div>-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+          ¿Qué estas buscando?
+            </h6>
+          <h6>
+              <a href="../index.html" class="text-reset">Inicio</a>
+          </h6>
+
+          <h6>
+            <a href="./inspirate.html" class="text-reset">Inspirate</a>
+          </h6>
+          <h6>
+            <a href="./ofertas.html" class="text-reset">Ofertas</a>
+          </h6>
+          <h6>
+            <a href="./presupuesto.html" class="text-reset">Presupuesto</a>
+          </h6>
+          <h6>
+            <a href="./productos.html" class="text-reset">Productos</a>
+          </h6>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contacto
+          </h6>
+          <h6><i class="fas fa-home me-3"></i> Av. San Martin 4111, Rafael Calzada</h6>
+          <h6>
+            <i class="fas fa-envelope me-3"></i>
+            ceramicostaggiascoventas@gmail.com
+          </h6>
+          <h6><i class="fas fa-phone me-3"></i> (011)42366353</h6>
+        </div>
+      </div>
+    </div>
+  </section>
 </footer>
 
 </body>
